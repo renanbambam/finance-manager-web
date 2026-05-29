@@ -1,27 +1,89 @@
-# Project
+<h1 align="center">Finance Manager — Web</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+<p align="center">
+  Angular single-page web client for multi-tenant financial management, with JWT auth and interactive dashboards.
+</p>
 
-## Development server
+<p align="center">
+  <img alt="Angular" src="https://img.shields.io/badge/Angular-16-DD0031?style=flat-square&logo=angular&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white">
+  <img alt="Chart.js" src="https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white">
+  <img alt="JWT" src="https://img.shields.io/badge/Auth-JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white">
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Finance Manager — Web** is the browser client of a three-platform financial-management product. It authenticates against the [`finance-api-quarkus`](https://github.com/renanbambam/finance-api-quarkus) backend with JWTs and provides dashboards to manage incomes, expenses, invoices and payments per enterprise.
 
-## Build
+Part of the same product family:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Tier | Repository | Stack |
+|------|-----------|-------|
+| API | [`finance-api-quarkus`](https://github.com/renanbambam/finance-api-quarkus) | Java 21 · Quarkus · MongoDB |
+| **Web client (this repo)** | `finance-manager-web` | Angular 16 |
+| Mobile client | [`finance-manager-mobile`](https://github.com/renanbambam/finance-manager-mobile) | React Native · Expo |
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Features
 
-## Running end-to-end tests
+- **JWT authentication** with login/register flows, token storage and automatic attachment via an HTTP interceptor.
+- **Route protection** — `AuthGuard` / `LoginGuard` guard authenticated and guest-only routes.
+- **Lazy-loaded feature modules** — `first-steps` (auth), `layout` (app shell), income-expense and invoice-payment domains.
+- **Dashboards** — financial charts via Chart.js.
+- **Decoupled messaging** — an `EventBus` service for cross-component communication.
+- **Reusable shared layer** — typed models, validators and a feedback (`imessage`) component.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Architecture
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```mermaid
+graph TD
+  subgraph App
+    Auth[auth/<br/>interceptor · guards · tokens]
+    FS[first-steps/<br/>login · register]
+    Layout[layout/<br/>home · income-expense · invoice-payment]
+    Shared[shared/<br/>event-bus · models · validators]
+  end
+  FS --> Auth
+  Layout --> Auth
+  Auth -->|Bearer JWT| API["finance-api-quarkus"]
+```
+
+| Area | Path | Responsibility |
+|------|------|----------------|
+| Auth | `src/app/auth/` | Interceptor, route guards, token service |
+| Onboarding | `src/app/first-steps/` | Login & register (lazy modules) |
+| App shell | `src/app/layout/` | Header, home dashboard, income-expense, invoice-payment, offcanvas |
+| Shared | `src/app/shared/` | Event bus, domain models, validators, message UI |
+
+---
+
+## Getting started
+
+### Prerequisites
+- Node.js 18+
+- Angular CLI 16
+- A running [`finance-api-quarkus`](https://github.com/renanbambam/finance-api-quarkus) instance (default origin `http://localhost:4200` is allowed by the API's CORS config)
+
+### Run
+```bash
+npm install
+npm start        # ng serve → http://localhost:4200
+```
+
+### Build & test
+```bash
+npm run build    # production build → dist/
+npm test         # Karma unit tests
+```
+
+---
+
+## Tech stack
+
+`Angular 16` · `TypeScript` · `Bootstrap 5` · `Chart.js` · `@auth0/angular-jwt` · `jwt-decode` · `ngx-cookie-service` · `RxJS`
