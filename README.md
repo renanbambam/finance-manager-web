@@ -87,3 +87,32 @@ npm test         # Karma unit tests
 ## Tech stack
 
 `Angular 16` · `TypeScript` · `Bootstrap 5` · `Chart.js` · `@auth0/angular-jwt` · `jwt-decode` · `ngx-cookie-service` · `RxJS`
+
+---
+
+## Testing
+
+```bash
+npm test           # Karma / Jasmine unit tests
+```
+
+Continuous integration builds the production bundle on every push (GitHub Actions).
+
+---
+
+## Screenshots
+
+<!-- Add real captures to docs/screenshots/ and embed them here, e.g.:
+![Dashboard](docs/screenshots/dashboard.png)
+![Login](docs/screenshots/login.png)
+-->
+
+_Captures of the dashboards and authentication screens are tracked in `docs/screenshots/`._
+
+---
+
+## Future Improvements
+
+- Increase component and service test coverage.
+- Add environment-based API configuration and a production deployment.
+- Improve responsive layout and accessibility.
