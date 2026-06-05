@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Faithful UI mockup derived from src/app/layout/invoice-payment/invoice-payment.component.html -->
+  <rect width="1280" height="800" fill="#131920"/>
+  <rect width="1280" height="64" fill="#1d2630"/>
+  <g fill="#ffffff"><rect x="28" y="24" width="22" height="3" rx="1.5"/><rect x="28" y="31" width="22" height="3" rx="1.5"/><rect x="28" y="38" width="22" height="3" rx="1.5"/></g>
+  <text x="72" y="40" fill="#ffffff" font-size="17" font-weight="600">Finance Manager — Fatura</text>
+
+  <!-- Fatura form -->
+  <g>
+    <rect x="120" y="104" width="480" height="600" rx="14" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="152" y="158" fill="#ffffff" font-size="26" font-weight="700">Fatura</text>
+
+    <text x="152" y="208" fill="#8996a4" font-size="14">Valor</text>
+    <rect x="152" y="220" width="416" height="44" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="247" fill="#8996a4" font-size="14">0,00</text>
+
+    <text x="152" y="296" fill="#8996a4" font-size="14">Data de emissão</text>
+    <rect x="152" y="308" width="416" height="44" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="335" fill="#f8f9fa" font-size="14">Janeiro</text>
+    <path d="M 540 326 l 10 0 l -5 8 z" fill="#8996a4"/>
+
+    <text x="152" y="384" fill="#8996a4" font-size="14">Data de vencimento</text>
+    <rect x="152" y="396" width="416" height="44" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="423" fill="#f8f9fa" font-size="14">Fevereiro</text>
+    <path d="M 540 414 l 10 0 l -5 8 z" fill="#8996a4"/>
+
+    <text x="152" y="472" fill="#8996a4" font-size="14">Descrição</text>
+    <rect x="152" y="484" width="416" height="120" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="512" fill="#8996a4" font-size="14">Fatura do cartão, fornecedor...</text>
+
+    <rect x="152" y="632" width="416" height="48" rx="8" fill="#0286c8"/>
+    <text x="360" y="662" fill="#ffffff" font-size="15" font-weight="600" text-anchor="middle">Adicionar fatura</text>
+  </g>
+
+  <!-- Pagamento form -->
+  <g>
+    <rect x="680" y="104" width="480" height="600" rx="14" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="712" y="158" fill="#ffffff" font-size="26" font-weight="700">Pagamento</text>
+
+    <text x="712" y="208" fill="#8996a4" font-size="14">Valor</text>
+    <rect x="712" y="220" width="416" height="44" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="730" y="247" fill="#8996a4" font-size="14">0,00</text>
+
+    <text x="712" y="296" fill="#8996a4" font-size="14">Data de pagamento</text>
+    <rect x="712" y="308" width="416" height="44" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="730" y="335" fill="#f8f9fa" font-size="14">Janeiro</text>
+    <path d="M 1100 326 l 10 0 l -5 8 z" fill="#8996a4"/>
+
+    <text x="712" y="384" fill="#8996a4" font-size="14">Método de pagamento</text>
+    <rect x="712" y="396" width="416" height="44" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="730" y="423" fill="#8996a4" font-size="14">Pix, cartão, boleto...</text>
+
+    <rect x="712" y="632" width="416" height="48" rx="8" fill="#0286c8"/>
+    <text x="920" y="662" fill="#ffffff" font-size="15" font-weight="600" text-anchor="middle">Adicionar pagamento</text>
+  </g>
+</svg>

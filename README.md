@@ -102,12 +102,16 @@ Continuous integration builds the production bundle on every push (GitHub Action
 
 ## Screenshots
 
-<!-- Add real captures to docs/screenshots/ and embed them here, e.g.:
-![Dashboard](docs/screenshots/dashboard.png)
-![Login](docs/screenshots/login.png)
--->
+> UI mockups faithfully derived from the actual component templates, colors and routes
+> (`src/app/.../*.component.html`, `src/styles.scss`). See [`docs/screenshots/`](docs/screenshots).
 
-_Captures of the dashboards and authentication screens are tracked in `docs/screenshots/`._
+| Login | Dashboard |
+|-------|-----------|
+| ![Login](docs/screenshots/login.svg) | ![Dashboard](docs/screenshots/dashboard.svg) |
+
+| Fluxo de caixa (Entrada / Despesas) | Fatura (Fatura / Pagamento) |
+|-------------------------------------|------------------------------|
+| ![Income and expense](docs/screenshots/income-expense.svg) | ![Invoice and payment](docs/screenshots/invoice-payment.svg) |
 
 ---
 

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Faithful UI mockup derived from src/app/layout/home/home.component.html + header -->
+  <rect width="1280" height="800" fill="#131920"/>
+
+  <!-- top bar (header.component) -->
+  <rect width="1280" height="64" fill="#1d2630"/>
+  <!-- hamburger -->
+  <g fill="#ffffff"><rect x="28" y="24" width="22" height="3" rx="1.5"/><rect x="28" y="31" width="22" height="3" rx="1.5"/><rect x="28" y="38" width="22" height="3" rx="1.5"/></g>
+  <text x="72" y="40" fill="#ffffff" font-size="17" font-weight="600">Finance Manager</text>
+  <!-- profile icon -->
+  <rect x="1212" y="18" width="40" height="28" rx="6" fill="none" stroke="#8996a4" stroke-width="2"/>
+  <circle cx="1226" cy="30" r="5" fill="#8996a4"/>
+
+  <text x="40" y="128" fill="#ffffff" font-size="30" font-weight="700">Dashboard</text>
+
+  <!-- chart card 1: Balanço -->
+  <g>
+    <rect x="40" y="168" width="384" height="420" rx="12" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="64" y="208" fill="#ffffff" font-size="17" font-weight="600">Balanço</text>
+    <!-- doughnut -->
+    <circle cx="232" cy="390" r="110" fill="none" stroke="#3e4853" stroke-width="34"/>
+    <path d="M 232 280 A 110 110 0 1 1 135 442" fill="none" stroke="#0286c8" stroke-width="34"/>
+    <path d="M 135 442 A 110 110 0 0 1 180 305" fill="none" stroke="#6293ff" stroke-width="34"/>
+    <text x="232" y="398" fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle">R$ 8.450</text>
+  </g>
+
+  <!-- chart card 2: Entradas e Despesas -->
+  <g>
+    <rect x="448" y="168" width="384" height="420" rx="12" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="472" y="208" fill="#ffffff" font-size="17" font-weight="600">Entradas e Despesas</text>
+    <!-- bars -->
+    <g>
+      <rect x="496" y="360" width="40" height="180" fill="#0286c8"/>
+      <rect x="556" y="300" width="40" height="240" fill="#6293ff"/>
+      <rect x="616" y="410" width="40" height="130" fill="#0286c8"/>
+      <rect x="676" y="330" width="40" height="210" fill="#6293ff"/>
+      <rect x="736" y="280" width="40" height="260" fill="#0286c8"/>
+    </g>
+    <line x1="472" y1="540" x2="808" y2="540" stroke="#3e4853"/>
+  </g>
+
+  <!-- chart card 3: Faturas e pagamentos -->
+  <g>
+    <rect x="856" y="168" width="384" height="420" rx="12" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="880" y="208" fill="#ffffff" font-size="17" font-weight="600">Faturas e pagamentos</text>
+    <!-- line chart -->
+    <polyline points="888,470 952,420 1016,440 1080,360 1144,390 1208,300" fill="none" stroke="#0286c8" stroke-width="3"/>
+    <polyline points="888,500 952,480 1016,460 1080,470 1144,430 1208,440" fill="none" stroke="#6293ff" stroke-width="3" stroke-dasharray="6 4"/>
+    <line x1="880" y1="540" x2="1216" y2="540" stroke="#3e4853"/>
+  </g>
+</svg>
