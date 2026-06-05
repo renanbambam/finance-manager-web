@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Faithful UI mockup derived from src/app/layout/income-expense/income-expense.component.html -->
+  <rect width="1280" height="800" fill="#131920"/>
+  <rect width="1280" height="64" fill="#1d2630"/>
+  <g fill="#ffffff"><rect x="28" y="24" width="22" height="3" rx="1.5"/><rect x="28" y="31" width="22" height="3" rx="1.5"/><rect x="28" y="38" width="22" height="3" rx="1.5"/></g>
+  <text x="72" y="40" fill="#ffffff" font-size="17" font-weight="600">Finance Manager — Fluxo de caixa</text>
+
+  <!-- Entrada form -->
+  <g>
+    <rect x="120" y="120" width="480" height="560" rx="14" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="152" y="176" fill="#ffffff" font-size="26" font-weight="700">Entrada</text>
+
+    <text x="152" y="232" fill="#8996a4" font-size="14">Valor</text>
+    <rect x="152" y="244" width="416" height="46" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="272" fill="#8996a4" font-size="14">0,00</text>
+
+    <text x="152" y="324" fill="#8996a4" font-size="14">Mês</text>
+    <rect x="152" y="336" width="416" height="46" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="364" fill="#f8f9fa" font-size="14">Janeiro</text>
+    <path d="M 540 354 l 10 0 l -5 8 z" fill="#8996a4"/>
+
+    <text x="152" y="416" fill="#8996a4" font-size="14">Descrição</text>
+    <rect x="152" y="428" width="416" height="120" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="170" y="456" fill="#8996a4" font-size="14">Salário, freelance, rendimentos...</text>
+
+    <rect x="152" y="588" width="416" height="48" rx="8" fill="#0286c8"/>
+    <text x="360" y="618" fill="#ffffff" font-size="15" font-weight="600" text-anchor="middle">Adicionar Entrada</text>
+  </g>
+
+  <!-- Despesas form -->
+  <g>
+    <rect x="680" y="120" width="480" height="560" rx="14" fill="#1d2630" stroke="rgba(248,249,250,0.05)"/>
+    <text x="712" y="176" fill="#ffffff" font-size="26" font-weight="700">Despesas</text>
+
+    <text x="712" y="232" fill="#8996a4" font-size="14">Valor</text>
+    <rect x="712" y="244" width="416" height="46" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="730" y="272" fill="#8996a4" font-size="14">0,00</text>
+
+    <text x="712" y="324" fill="#8996a4" font-size="14">Mês</text>
+    <rect x="712" y="336" width="416" height="46" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="730" y="364" fill="#f8f9fa" font-size="14">Janeiro</text>
+    <path d="M 1100 354 l 10 0 l -5 8 z" fill="#8996a4"/>
+
+    <text x="712" y="416" fill="#8996a4" font-size="14">Descrição</text>
+    <rect x="712" y="428" width="416" height="120" rx="8" fill="#131920" stroke="#3e4853"/>
+    <text x="730" y="456" fill="#8996a4" font-size="14">Aluguel, mercado, contas...</text>
+
+    <rect x="712" y="588" width="416" height="48" rx="8" fill="#0286c8"/>
+    <text x="920" y="618" fill="#ffffff" font-size="15" font-weight="600" text-anchor="middle">Adicionar Despesa</text>
+  </g>
+</svg>
